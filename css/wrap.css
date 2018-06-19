@@ -1,0 +1,110 @@
+/*清除浮动*/
+.clear:after{
+	display:inline-block;
+	clear: both;
+	content: '';
+}
+body{
+	height: 100%;
+}
+/*背景*/
+.gxx_wrap{
+	background-color: #2c3e50;
+	height: 100%;
+}
+/*nav样式*/
+.gxx_wrap .gxx_nav{
+	height: 30px;
+	background-color: #2c3e50;
+}
+/*header样式*/
+.gxx_wrap .gxx_header{
+	height: 82px;
+	padding:0 206px;
+	background-color: white;
+	display: flex;
+}
+.gxx_header div{
+	flex:1;
+}
+/*logo部分*/
+.gxx_header .gxx_logo img{
+	width: 160px;
+	height: 82px;
+}
+/*文字部分*/
+.gxx_header .gxx_text{
+	display: flex;
+}
+.gxx_text a{
+	flex: 1;
+	color:#2c3e50;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 82px;
+}
+/*内容区域样式*/
+.gxx_wrap .gxx_con{
+	height: 77%;
+}
+/*内容区轮播图*/
+.gxx_con .gxx_con_img{
+	height: 100%;
+}
+.gxx_con .gxx_con_img li{
+	float:left;
+	height: 100%;
+	width: 25%;
+}
+.gxx_con_img li img{
+	width: 100%;
+	height: 100%;
+}
+/*主页底部样式*/
+.gxx_wrap .gxx_footer{
+	height: 90px;
+	/*position: fixed;*/
+	background-color: #2c3e50;
+	width: 100%;
+	bottom: 0;
+	display: flex;
+	line-height: 90px;
+}
+.gxx_footer form{
+	width: 100%;
+	margin:0 206px;
+}
+/*登录标题*/
+.gxx_footer .gxx_tit{
+	color:#e7eaee;
+	font-size: 20px;
+	font-weight: bold;
+	width: 142px;
+	height: 100%;
+	line-height: 90px;
+}
+/*登录框*/
+.gxx_footer div{
+	float:left;
+	flex:1;
+}
+.gxx_footer span{
+	margin:0 10px;
+	color:white;
+}
+.gxx_user input,.gxx_password input{
+	width: 260px;
+	height: 40px;
+	font-size: 20px;
+}
+/*登录提交按钮*/
+.gxx_footer .gxx_submit{
+	float:right;
+}
+.gxx_footer #submit{
+	border:none;
+	width: 88px;
+	height: 40px;
+	color: white;
+	background-color: #1dd2af;
+}
